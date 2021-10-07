@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Actividad</title>
+</head>
+<body bgcolor="#A595A0">
+	<style >
+	.cua{
+    	position: absolute;
+   		top: 250px;
+   		left: 400px;
+   		border: solid black 5px;
+   		width: 500px;
+   		height: 250px;
+   		background: indianred;
+   		border-radius: 10px;
+    }
+
+    .lola{
+    	position: absolute;
+    	top: 270px;
+    	left: 130px;
+    	border: solid black 2px;
+    	width: 250px;
+    	height: 40px;
+    }
+    .loli{
+    	position: absolute;
+  		top: -230px;
+   		left: -250px;
+   		border: solid black 5px;
+   		width: 200px;
+   		height: 150px;
+   		font-size: 25px;
+   		background: lightsteelblue;
+   		border-radius: 10px;
+    }
+
+	</style>
+	<div class="cua">
+		 	<script>
+	function calcu(){
+	h=dato1.value
+	l=Number(dato2.value);
+	p=Number(dato3.value);
+	j=Number(dato4.value);
+	producto=p*l;
+	resul=producto-j;
+			eje.innerHTML="compraste "+p+"de "+h +"a "+producto+"se te devuelve "+resul;
+
+	}
+	
+ 	</script>
+ 
+	<form> 
+		<center>
+		<label>TIENDA MONTENEGRO</label>
+		<br>
+		<label>Papitas:  3500</label>
+        <br>
+		<label>Chocolate:  2000</label>
+		<br>
+		<label>Doritos:  1000</label>
+		<br>
+		<input type="text" id="dato1" placeholder="Producto">
+		<input type="text" id="dato2" placeholder="Precio">
+		<input type="text" id="dato3" placeholder="Cantidad">
+		<input type="text" id="dato4" placeholder="Mi dinero">
+		
+
+		<div class="loli">
+		<center>
+		<label>ALACENA</label>
+		<br>
+		<label>Papitas:  10</label>
+        <br>
+		<label>Chocolate:  10</label>
+		<br>
+		<label>Doritos:  10</label>
+		</div>
+
+	</center>
+	<div class="lola" onclick="calcu()" id="eje">Ejecutar</div>
+	</form>
+</body>
+</html>
